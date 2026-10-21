@@ -24,10 +24,12 @@ export default function Home() {
 
   return (
     <main>
+      <div stlye={{ display: 'flex', justify-content: 'center', align-items: 'center' }}><img src="./1600 x400 banner.png" /></div>
+
+
+      <section style={{ display:'none', marginTop: '2rem', padding: '1rem', border: '1px solid #ccc', borderRadius: '8px' }}>
       <h1>Cloudflare Tunnel Test App</h1>
       <p>Status: Frontend is accessible.</p>
-
-      <section style={{ marginTop: '2rem', padding: '1rem', border: '1px solid #ccc', borderRadius: '8px' }}>
         <h2>Backend Connection Test</h2>
         <button onClick={fetchBackend} style={{ padding: '0.5rem 1rem', cursor: 'pointer' }}>
           Test API Fetch (/api/test)
